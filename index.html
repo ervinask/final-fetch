@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="con con-1">
+      <div class="web-summary">
+        <div class="center-summary">
+          <h1>An Amazing Website</h1>
+          <p>
+            Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas
+            concludaturque usu, facete detracto patrioque an per, lucilius
+            pertinacia eu vel. Adhuc invidunt duo ex. Eu tantas dolorum
+            ullamcorper qui.
+          </p>
+        </div>
+      </div>
+      <div class="question-con">
+        <div class="question question-1">
+          <p class="question-count">1/5</p>
+          <p class="question-name">What do you usually do after work?</p>
+          <form class="first-form" id="myForm1"></form>
+          <div class="line"></div>
+          <button class="next-button" form="myForm1">Next</button>
+        </div>
+        <div class="question question-2">
+          <p class="question-count">2/5</p>
+          <p class="question-name">Please fill in your details</p>
+          <form class="second-form" id="myForm2">
+            <input
+              type="text"
+              placeholder="First Name"
+              id="fname"
+              class="input-text"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="lname"
+              class="input-text"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              id="email"
+              class="input-text"
+              required
+            />
+            <select
+              id="country"
+              name="view"
+              class="input-text"
+              placeholder="Your Country"
+              required
+            ></select>
+            <div class="accept-con">
+              <input type="checkbox" id="accept-checkbox" required />
+              <label for="accept-checkbox"
+                >Please accept our
+                <span class="blue">Terms and condition</span></label
+              >
+            </div>
+          </form>
+          <div class="line"></div>
+          <input type="submit" id="next-button-2" form="myForm2" value="Next" />
+        </div>
+        <div class="question question-3">
+          <p class="question-count">3/5</p>
+          <p class="question-name">Are these details correct?</p>
+          <p class="grey">Please make sure these details are correct:</p>
+          <div class="information">
+            <div class="titles">
+              <p>Name</p>
+              <p>Surname</p>
+              <p>Email</p>
+              <p>Country</p>
+            </div>
+            <div class="personal-info"></div>
+          </div>
+          <div class="line"></div>
+          <button class="next-button cancel-button">Oops, no</button>
+          <button class="next-button confirm-button">
+            I Confirm details are accurate
+          </button>
+        </div>
+        <div class="question question-4">
+          <p class="question-count">4/5</p>
+          <p class="question-name">Please check your email</p>
+          <a href="dashboard.html" class="grey">
+            We sent you an email with all of the required information to
+            complete the registration
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

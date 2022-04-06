@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <section class="container">
+      <article class="dashboard">
+        <div class="information visitors">
+          <img src="eye.png" alt="Eye" />
+          <div class="info-display">
+            <p class="number number-visitors"></p>
+            <p class="title">Visitors</p>
+          </div>
+        </div>
+        <div class="information signups">
+          <img src="eye.png" alt="Eye" />
+          <div class="info-display">
+            <p class="number number-signups"></p>
+            <p class="title">Signups</p>
+          </div>
+        </div>
+        <div class="information countries">
+          <img src="eye.png" alt="Eye" />
+          <div class="info-display">
+            <p class="number number-countries"></p>
+            <p class="title">Signup Countries</p>
+          </div>
+        </div>
+        <div class="information noncapitalized">
+          <img src="eye.png" alt="Eye" />
+          <div class="info-display">
+            <p class="number number-noncap"></p>
+            <p class="title">Names that are not capitalized</p>
+          </div>
+        </div>
+      </article>
+      <article class="people">
+        <h1>Signups</h1>
+        <div class="searches">
+          <input
+            type="text"
+            placeholder="Search (back-end)..."
+            id="search-name"
+          />
+          <select id="search-country">
+            <option id="labass" selected></option>
+          </select>
+        </div>
+        <div class="people-display"></div>
+      </article>
+    </section>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
