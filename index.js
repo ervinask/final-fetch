@@ -57,8 +57,6 @@ function createElement(type, props, ...children) {
   return element;
 }
 
-getDataActivity();
-
 // Click on first next button
 
 document.querySelector(".first-form").addEventListener("submit", (e) => {
@@ -175,3 +173,5 @@ const postInformation = async () => {
   const data = await res.json();
   console.log(data);
 };
+
+getDataActivity();

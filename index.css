@@ -1,192 +1,164 @@
 html {
-  font-size: 10px;
   font-family: sans-serif;
+  font-size: 10px;
 }
-
 body {
   width: 100%;
 }
-
 .con {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 /*Left side of the web*/
-
 .web-summary {
-  width: 50%;
-  height: 100vh;
+  align-items: center;
   background: linear-gradient(#424add, #232471);
   display: flex;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
+  width: 50%;
 }
-
 .center-summary {
-  text-align: center;
   color: #fff;
+  text-align: center;
   width: 80%;
 }
-
 .center-summary > h1 {
   font-size: 2.8rem;
   font-weight: normal;
 }
-
 .center-summary > p {
   font-size: 1.5rem;
   opacity: 0.8;
 }
 
 /*Right side of the web*/
-
 .question-con {
-  width: 50%;
-  height: 100vh;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 100vh;
   justify-content: center;
+  width: 50%;
 }
-
 .question {
-  width: 30rem;
   position: relative;
+  width: 30rem;
 }
-
 .question-count {
-  font-size: 1.7rem;
   color: #808080;
+  font-size: 1.7rem;
   margin: 0.2rem 0;
 }
-
 .question-name {
   font-size: 1.9rem;
   margin: 0.2rem 0 1.6rem;
 }
-
 .checkbox-con {
-  margin-left: 1rem;
-  display: flex;
   align-items: center;
+  display: flex;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
-
 .checkbox {
-  width: 2.8rem;
   height: 2.8rem;
+  width: 2.8rem;
 }
-
 .checkbox-text {
   font-size: 1.3rem;
   margin-left: 1.5rem;
 }
-
 .line {
-  width: 100%;
-  height: 0.2rem;
   background-color: #969696;
+  height: 0.2rem;
   margin-top: 2rem;
   opacity: 0.2;
+  width: 100%;
 }
-
 .next-button,
 #next-button-2 {
+  background-color: #424add;
+  border: none;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
   position: absolute;
   right: 0;
-  margin-top: 2rem;
-  background-color: #424add;
-  color: #fff;
-  padding: 1rem 3rem;
-  font-size: 1.5rem;
-  border-radius: 0.3rem;
-  border: none;
-  cursor: pointer;
 }
-
 .next-button:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 /* Second question */
-
 .input-text {
-  width: 28rem;
   height: 3rem;
   margin-bottom: 1rem;
   padding-left: 1rem;
+  width: 28rem;
 }
-
 #country {
-  width: 29.6rem;
   height: 3.5rem;
+  width: 29.6rem;
 }
-
 .accept-con {
-  display: flex;
   align-items: center;
+  display: flex;
 }
-
 .accept-con > label {
   margin-left: 1rem;
 }
-
 .blue {
   color: #242a94;
 }
 
 /* Third quesstion */
-
 .grey {
   color: #808080;
 }
-
 .information {
+  color: #808080;
   display: flex;
   gap: 6rem;
-  color: #808080;
 }
-
 .cancel-button,
 .confirm-button {
   font-size: 1rem;
   font-weight: bold;
   padding: 1rem 2.7rem;
 }
-
 .cancel-button {
-  left: 0;
-  right: auto;
   background-color: #969696;
   color: #383838;
+  left: 0;
+  right: auto;
 }
 
 /*Error message*/
-
 .errorMessage {
-  text-align: center;
   font-size: 1.5rem;
   opacity: 0.5;
+  text-align: center;
 }
 
+/*Phone mode*/
 @media only screen and (max-width: 768px) {
   .con {
-    width: 100%;
     display: block;
+    width: 100%;
   }
-
   .web-summary {
-    width: 100%;
     height: 50vh;
-  }
-
-  .question-con {
     width: 100%;
+  }
+  .question-con {
     height: 80vh;
+    width: 100%;
   }
 }
-
 .question-2,
 .question-3,
 .question-4 {

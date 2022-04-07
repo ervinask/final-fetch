@@ -20,9 +20,16 @@ const get = async () => {
         data.meta.pagination.total;
 
       // Number of different countries
+      let countryCount = [];
+      data.data.forEach((element) => {
+        if (element.attributes.country.data) {
+          countryCount.push(element.attributes.country.data.id);
+        }
+      });
       document.querySelector(".number-countries").textContent = [
-        ...new Set(data.data.map((x) => x.attributes.first_name)),
+        ...new Set(countryCount),
       ].length;
+
       // Number of users that first name or last name non capitalized
       document.querySelector(".number-noncap").innerHTML = data.data.filter(
         (word) =>
@@ -34,10 +41,12 @@ const get = async () => {
 
       // Display of each human
       data.data.forEach((element) => {
+        // Getting country id to display country
         let countryDis = "other";
         if (element.attributes.country.data)
           countryDis = countryArr[element.attributes.country.data.id - 1];
 
+        // Appending information
         people.append(
           createElement(
             "div",
@@ -99,18 +108,21 @@ function createElement(type, props, ...children) {
   return element;
 }
 
-//////////////// Filterinimas
+// Filter ////////////////////////////////////////////
 
+// On text input
 searchas.addEventListener("input", () => {
   people.innerHTML = "";
   displayRooms();
 });
 
+// On country change
 document.querySelector("#search-country").addEventListener("input", () => {
   people.innerHTML = "";
   displayRooms();
 });
 
+// Function that change inputs
 const displayRooms = async () => {
   let indexx = "";
   if (document.querySelector("#search-country").value) {

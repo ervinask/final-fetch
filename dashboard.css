@@ -104,19 +104,18 @@ img {
   opacity: 0.8;
   width: 30%;
 }
+.errormsg {
+  background-color: #e35353;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem;
+}
 
 @media only screen and (max-width: 768px) {
   .dashboard {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-}
-
-.errormsg {
-  color: #fff;
-  background-color: #e35353;
-  padding: 1rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  border-radius: 1rem;
 }
